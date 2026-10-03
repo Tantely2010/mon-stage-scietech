@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+li {
+  background-color: #f6f8fa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
