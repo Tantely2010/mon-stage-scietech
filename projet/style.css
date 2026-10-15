@@ -1,11 +1,44 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 40px;
+  color: #4a2c35;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #fff1ee 0%, #fc9db0 50%, #f87883 100%);
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #d6455d;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #d6455d;
+  margin-top: 40px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ffb3a7;
+}
+
+#derniere-m-a-j,
+#nombre-branches {
+  color: #8a5a66;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
 }
 
 li {
-  background-color: #f6f8fa;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 6px;
+  background-color: #fabdbd;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(214, 69, 93, 0.15);
 }
