@@ -4,6 +4,11 @@ function chargerBranches() {
   fetch(`https://api.github.com/repos/${repo}/branches`)
     .then(response => response.json())
     .then(data => {
+      if (!Array.isArray(data)) {
+        console.error("Réponse inattendue :", data);
+        return;
+      }
+
       const list = document.getElementById("branches-list");
       list.innerHTML = "";
 
@@ -21,5 +26,32 @@ function chargerBranches() {
     });
 }
 
-chargerBranches();
-setInterval(chargerBranches, 60000);
+function chargerCommits() {
+  fetch(`https://api.github.com/repos/${repo}/commits?per_page=5`)
+    .then(response => response.json())
+    .then(data => {
+      if (!Array.isArray(data)) {
+        console.error("Réponse inattendue :", data);
+        return;
+      }
+
+      const list = document.getElementById("commits-list");
+      list.innerHTML = "";
+
+      data.forEach(commit => {
+        const item = document.createElement("li");
+        const date = new Date(commit.commit.author.date).toLocaleString("fr-FR");
+        item.textContent =
+          commit.commit.message + " — " + commit.commit.author.name + " (" + date + ")";
+        list.appendChild(item);
+      });
+    });
+}
+
+function toutActualiser() {
+  chargerBranches();
+  chargerCommits();
+}
+
+toutActualiser();
+setInterval(toutActualiser, 180000);
