@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Planning du stage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Planning du stage</h1>
+
+  <p>
+    <a class="lien-drive" href="https://drive.google.com/drive/folders/17RWBnlroqvVRbT-xKzlH4sZfEqfSrzG7?usp=drive_link" target="_blank" rel="noopener">
+      📁 Ouvrir le Drive du stage
+    </a>
+  </p>
+
+  <input type="file" id="fichier-excel" accept=".xlsx">
+
+  <table id="planning-table">
+    <thead>
+      <tr>
+        <th>Semaine</th>
+        <th>Objectif</th>
+        <th>Tâche</th>
+      </tr>
+    </thead>
+    <tbody id="planning-body"></tbody>
+  </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="planning.js"></script>
+</body>
+</html>
