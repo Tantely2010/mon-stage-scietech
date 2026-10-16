@@ -44,6 +44,7 @@ J'ai choisi le polling car c'est le plus adapté à un prototype : il fonctionne
 - Message d'erreur dans la console (`Unsafe attempt to load URL file:///...`) : il vient du fait que la page est ouverte directement depuis un fichier. Ce n'est pas une erreur de mon code. Pour l'éviter, on peut utiliser un petit serveur local (extension Live Server de VS Code).
 - Valeur de test oubliée : j'avais mis un intervalle court pour tester (10 secondes) puis je l'ai remis à la bonne valeur après avoir envoyé le code. J'ai corrigé avec un nouveau commit. Retenu : l'historique Git garde la trace de ces corrections.
 - Réponse inattendue de l'API : en cas de limite dépassée, GitHub renvoie un message d'erreur au lieu d'une liste. J'ai ajouté une vérification (`Array.isArray`) pour que la page ne plante pas.
+- limite mise à jour : je n'ai fais afficher que les commits du branche main car avec 3 branches, ça fait 4 requêtes à chaque mise à jour. Toutes les 3 minutes, ça donnerait 80 requêtes par heure, donc au-dessus de la limite de 60. 
 
 6. Lien du dépôt GitHub
 
