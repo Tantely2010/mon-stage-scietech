@@ -1,5 +1,7 @@
 document.getElementById("fichier-excel").addEventListener("change", function (event) {
   const fichier = event.target.files[0];
+  if (!fichier) return;
+
   const lecteur = new FileReader();
 
   lecteur.onload = function (e) {
