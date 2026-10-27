@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #3d3558;
+  background: #fdf5f9;
+}
+
+.contenu {
+  padding: 40px;
+  min-width: 0;
+}
+
+.menu {
+  background: #fde8f1;
+  border-right: 1px solid #f3dce8;
+  padding: 24px 16px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 11px;
+  color: #7b7894;
+  margin: 4px 0 30px;
+}
+
+.menu nav a {
+  display: block;
+  text-decoration: none;
+  color: #3d3558;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+}
+
+.menu nav a:hover {
+  background: #fbe3ee;
+}
+
+.menu nav a.actif {
+  background: #c9669f;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-phrase {
+  margin-top: 40px;
+  font-style: italic;
+  color: #c9669f;
+  font-size: 14px;
+}

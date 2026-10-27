@@ -2,32 +2,42 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Planning du stage</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning - Stage Scietech</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="pages.css">
 </head>
 <body>
-  <h1>Planning du stage</h1>
+  <main class="contenu">
 
-  <p>
-    <a class="lien-drive" href="https://drive.google.com/drive/folders/17RWBnlroqvVRbT-xKzlH4sZfEqfSrzG7?usp=drive_link" target="_blank" rel="noopener">
-      Ouvrir le Drive du stage
-    </a>
-  </p>
+    <header class="entete-page">
+      <h1>Planning du stage</h1>
+      <p>Les 6 semaines, avec objectifs, tâches et livrables</p>
+    </header>
 
-  <input type="file" id="fichier-excel" accept=".xlsx">
+    <div class="barre-outils">
+      <input type="file" id="fichier-excel" accept=".xlsx">
+      <a class="bouton" href="https://drive.google.com/drive/folders/17RWBnlroqvVRbT-xKzlH4sZfEqfSrzG7?usp=drive_link" target="_blank" rel="noopener">Ouvrir le Drive du stage</a>
+    </div>
 
-  <table id="planning-table">
-    <thead>
-      <tr>
-        <th>Semaine</th>
-        <th>Objectif</th>
-        <th>Tâche</th>
-      </tr>
-    </thead>
-    <tbody id="planning-body"></tbody>
-  </table>
+    <div class="tableau">
+      <table>
+        <thead>
+          <tr>
+            <th>Semaine</th>
+            <th>Objectif</th>
+            <th>Tâche</th>
+            <th>Livrable</th>
+          </tr>
+        </thead>
+        <tbody id="planning-body"></tbody>
+      </table>
+    </div>
+
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="menu.js"></script>
   <script src="planning.js"></script>
 </body>
 </html>

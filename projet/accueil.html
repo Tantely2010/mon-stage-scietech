@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Stage Scietech</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="accueil.css">
+</head>
+<body>
+  <main class="contenu">
+
+    <h1>Stage en ligne</h1>
+    <p class="sous-titre">Espace de gestion et de suivi de stage</p>
+
+    <div class="page">
+
+      <div class="colonne-principale">
+
+        <section class="hero">
+          <div>
+            <h2>Bonjour !</h2>
+            <p class="gras">Bienvenue sur l'espace du stage SCIETECH.</p>
+            <p>Ici, vous pouvez suivre les missions, consulter le planning et accéder aux documents tout au long du stage.</p>
+            <a class="bouton" href="planning.html">Voir le planning</a>
+          </div>
+          <img class="hero-img" src="jakub-zerdzicki-WD7S-Lz12Es-unsplash.jpg" alt="Illustration du stage">
+        </section>
+
+        <section class="carte">
+          <h2>Description du stage</h2>
+
+          <div class="infos">
+            <div class="info"><span class="info-titre">Durée</span>6 semaines</div>
+            <div class="info"><span class="info-titre">Mode</span>100 % en ligne</div>
+            <div class="info"><span class="info-titre">Méthode</span>Coaching et autoformation</div>
+            <div class="info"><span class="info-titre">Projet final</span>Interface de suivi du stage</div>
+          </div>
+
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Développer l'autonomie et la recherche</li>
+            <li>Pratiquer le développement web</li>
+            <li>Transformer un besoin en solution technique</li>
+            <li>Tester, documenter et présenter son travail</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <div class="colonne-droite">
+
+        <section class="carte">
+          <h2>Mon avancement</h2>
+          <div class="cercle" id="cercle">
+            <div class="cercle-centre" id="pourcentage">0%</div>
+          </div>
+          <p id="compteur"></p>
+        </section>
+
+        <section class="carte">
+          <h2>Planning</h2>
+          <ul id="liste-planning"></ul>
+        </section>
+
+        <section class="phrase">
+          La réussite est la somme de petits efforts répétés, jour après jour.
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="menu.js"></script>
+  <script src="accueil.js"></script>
+</body>
+</html>
