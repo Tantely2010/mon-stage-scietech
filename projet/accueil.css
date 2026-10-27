@@ -1,0 +1,137 @@
+.page {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.colonne-principale {
+  flex: 1;
+  min-width: 0;
+}
+
+.colonne-droite {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #fde8f1;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.hero p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hero .gras {
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.info {
+  background: #fdf0f6;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.info-titre {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #c9669f;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.carte ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.carte li {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cercle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #f5e3ec;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cercle-centre {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#compteur {
+  font-size: 14px;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+#liste-planning {
+  list-style: none;
+  padding: 0;
+}
+
+#liste-planning li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #fbeef5;
+  font-size: 14px;
+}
+
+#liste-planning li:last-child {
+  border-bottom: none;
+}
+
+.phrase {
+  background: #f1e6fb;
+  border-radius: 16px;
+  padding: 20px;
+  font-style: italic;
+  color: #7a4a8c;
+  font-size: 14px;
+  line-height: 1.5;
+}

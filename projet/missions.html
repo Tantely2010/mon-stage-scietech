@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missions - Stage Scietech</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <main class="contenu">
+
+    <header class="entete-page">
+      <h1>Missions</h1>
+      <p>Crée tes missions et suis leur avancement</p>
+    </header>
+
+    <section class="carte">
+      <h2>Avancement des missions</h2>
+      <p id="resume"></p>
+      <div class="barre-fond"><div class="barre-remplie" id="barre"></div></div>
+    </section>
+
+    <section class="carte">
+      <h2>Nouvelle mission</h2>
+      <div class="formulaire">
+        <input type="text" id="champ-nom" placeholder="Nom de la mission">
+        <input type="text" id="champ-description" placeholder="Description">
+        <input type="text" id="champ-echeance" placeholder="Échéance">
+        <button class="bouton" id="ajouter" type="button">Ajouter</button>
+      </div>
+    </section>
+
+    <div class="barre-outils">
+      <input type="file" id="fichier-missions" accept=".xlsx">
+    </div>
+
+    <div class="tableau">
+      <table>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Échéance</th>
+            <th>Statut</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="missions-body"></tbody>
+      </table>
+    </div>
+    <p class="vide" id="vide">Aucune mission pour l'instant.</p>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="menu.js"></script>
+  <script src="missions.js"></script>
+</body>
+</html>

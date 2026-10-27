@@ -15,7 +15,13 @@ document.getElementById("fichier-excel").addEventListener("change", function (ev
     lignes.forEach(ligne => {
       const tr = document.createElement("tr");
 
-      const valeurs = [ligne.Semaine, ligne.Programme, ligne.Objectif, ligne.Livrable, ligne["Tâche"]];
+      const valeurs = [
+        ligne.Semaine,
+        ligne.Objectif,
+        ligne["Tâche"],
+        ligne.Livrable
+      ];
+
       valeurs.forEach(valeur => {
         const td = document.createElement("td");
         td.textContent = valeur;
