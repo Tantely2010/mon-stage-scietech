@@ -13,17 +13,17 @@ let semaines = [
   { numero: 2, statut: "à présenter" },
   { numero: 3, statut: "à présenter" },
   { numero: 4, statut: "à présenter" },
-  { numero: 5, statut: "en cours" },
-  { numero: 6, statut: "à faire" }
+  { numero: 5, statut: "à présenter" },
+  { numero: 6, statut: "en cours" }
 ];
 
-const sauvegarde = localStorage.getItem("semaines");
+const sauvegarde = localStorage.getItem("semaines2");
 if (sauvegarde) {
-  semaines = JSON.parse(sauvegarde);
+  semaines2 = JSON.parse(sauvegarde);
 }
 
 function sauvegarder() {
-  localStorage.setItem("semaines", JSON.stringify(semaines));
+  localStorage.setItem("semaines2", JSON.stringify(semaines2));
 }
 
 function afficher() {
