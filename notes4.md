@@ -28,7 +28,7 @@ Drive de test J'ai créé un dossier Stage Scietech - Test avec les 8 sous-dossi
 
 Seuls des documents et des accès de test sont utilisés, conformément aux règles du stage.
 
-4. Recherche : accéder à Google Drive depuis du code (non réalisé par moi)
+4. Recherche : accéder à Google Drive depuis un  code (non réalisé par moi)
 
 L'API Google Drive permet à un programme de lister les fichiers d'un dossier, de les lire ou de les envoyer. Voici ce que j'ai compris :
 
